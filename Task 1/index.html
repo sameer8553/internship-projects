@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Saiket Systems Intern</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-cpu"></i> MyPortfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="badge-intern">
+                        <i class="bi bi-briefcase"></i> Intern at Saiket Systems
+                    </div>
+                    <h1 class="hero-title">
+                        Building <span class="highlight">Cloud</span> &amp; 
+                        <span class="highlight">AI</span> Solutions
+                    </h1>
+                    <p class="hero-desc">
+                        Saiket Systems is a prominent technology company known for expertise in 
+                        cloud computing, blockchain, AI, and ML. This portfolio highlights my 
+                        internship journey and projects.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary btn-hero">View Projects</a>
+                        <a href="#contact" class="btn btn-outline-secondary btn-hero-outline">Contact Me</a>
+                    </div>
+                    <!-- Hashtags -->
+                    <div class="hashtags mt-3">
+                        <span class="hashtag">#SaiketSystemsJourney</span>
+                        <span class="hashtag">#SaiketExperience</span>
+                        <span class="hashtag">#FutureWithSaiket</span>
+                        <span class="hashtag">#SaiketInnovation</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="hero-image-box">
+                        <i class="bi bi-cloud-arrow-up"></i>
+                        <i class="bi bi-cpu"></i>
+                        <i class="bi bi-robot"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span>Projects</span></h2>
+                <p>Placeholder projects showcasing my work at Saiket Systems</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="bi bi-cloud"></i>
+                        </div>
+                        <h5>Cloud Migration Tool</h5>
+                        <p>Scalable cloud solution for enterprise data migration with AWS integration.</p>
+                        <div class="project-tags">
+                            <span>AWS</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="bi bi-robot"></i>
+                        </div>
+                        <h5>AI Chat Assistant</h5>
+                        <p>Conversational AI agent using NLP and ML for customer support automation.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="bi bi-link-45deg"></i>
+                        </div>
+                        <h5>Blockchain Tracker</h5>
+                        <p>Decentralized ledger monitoring dashboard for real-time transaction tracking.</p>
+                        <div class="project-tags">
+                            <span>Solidity</span>
+                            <span>Web3.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra placeholder note -->
+            <div class="text-center mt-5">
+                <p class="text-muted small">
+                    <i class="bi bi-info-circle"></i> More projects coming soon — these are placeholders
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In <span>Touch</span></h2>
+                <p>Have a question or want to collaborate? Drop me a message.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm" class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Your name" required />
+                                <div class="error-msg" id="nameError">Please enter your name</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="emailAddress" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com" required />
+                                <div class="error-msg" id="emailError">Please enter a valid email</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="subjectLine" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subjectLine" placeholder="Subject" />
+                            </div>
+                            <div class="col-12">
+                                <label for="messageText" class="form-label">Message</label>
+                                <textarea class="form-control" id="messageText" rows="4" placeholder="Write your message..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    Send Message <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div id="formFeedback" class="col-12"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">
+                        &copy; 2026 · Saiket Systems Intern 
+                        <span class="sep">|</span> 
+                        <span class="hashtag-foot">#SaiketAchievements</span>
+                        <span class="hashtag-foot">#SaiketProjects</span>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

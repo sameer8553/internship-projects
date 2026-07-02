@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+    padding: 30px 0;
+}
+
+#root {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.app-container {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    border: 1px solid #edf2f7;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.header h1 i {
+    color: #2563eb;
+    margin-right: 10px;
+}
+
+.header p {
+    color: #64748b;
+}
+
+.user-form {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    border: 1px solid #edf2f7;
+}
+
+.user-form .form-control {
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    padding: 10px 14px;
+}
+
+.user-form .form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.user-form .btn-submit {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.user-form .btn-submit:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: #f8fafc;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    border: 1px solid #edf2f7;
+    transition: 0.2s;
+}
+
+.user-item:hover {
+    border-color: #dbeafe;
+    background: #f1f5f9;
+}
+
+.user-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.user-info .name {
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.user-info .email {
+    color: #64748b;
+}
+
+.user-info .age {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.user-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.user-actions button {
+    background: none;
+    border: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-actions .btn-edit {
+    color: #2563eb;
+}
+
+.user-actions .btn-edit:hover {
+    background: #dbeafe;
+}
+
+.user-actions .btn-delete {
+    color: #dc2626;
+}
+
+.user-actions .btn-delete:hover {
+    background: #fee2e2;
+}
+
+.edit-input {
+    padding: 4px 10px;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    width: 120px;
+}
+
+.edit-input:focus {
+    outline: none;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #94a3b8;
+}
+
+.empty-state i {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+.loading {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+}
+
+@media (max-width: 768px) {
+    .app-container { padding: 20px; }
+    .user-info { gap: 10px; }
+    .user-item { flex-wrap: wrap; gap: 10px; }
+    .user-actions { margin-left: auto; }
+    .edit-input { width: 80px; }
+}
+
+@media (max-width: 576px) {
+    .header h1 { font-size: 1.5rem; }
+    .user-form { padding: 15px; }
+    .user-info { flex-direction: column; gap: 2px; }
+    .user-item { flex-direction: column; align-items: stretch; }
+    .user-actions { justify-content: flex-end; }
+}

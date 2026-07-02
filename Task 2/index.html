@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVerse - Best Online Store</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-bag-fill"></i> ShopVerse
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link cart-link" href="#">
+                            <i class="bi bi-cart3"></i> 
+                            Cart <span class="cart-badge" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="badge-offer">🔥 Limited Time Offer</span>
+                    <h1 class="hero-title">
+                        Discover Amazing <br>
+                        <span>Products</span> at Best Prices
+                    </h1>
+                    <p class="hero-text">
+                        Shop the latest trends in electronics, fashion, and more. 
+                        Quality products with fast delivery.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#products" class="btn btn-primary btn-shop">Shop Now <i class="bi bi-arrow-right"></i></a>
+                        <a href="#about" class="btn btn-outline-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-icons">
+                        <i class="bi bi-cart-check"></i>
+                        <i class="bi bi-tag"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>Why Choose <span>ShopVerse</span></h2>
+                    <p class="about-text">We provide the best shopping experience with quality products and fast delivery.</p>
+                    
+                    <div class="feature">
+                        <div class="feature-box">
+                            <i class="bi bi-truck"></i>
+                            <div>
+                                <h6>Free Delivery</h6>
+                                <p>On orders above $50</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <i class="bi bi-shield-check"></i>
+                            <div>
+                                <h6>Secure Payment</h6>
+                                <p>100% safe transactions</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <i class="bi bi-arrow-repeat"></i>
+                            <div>
+                                <h6>Easy Returns</h6>
+                                <p>30 day return policy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="about-image">
+                        <i class="bi bi-bag-check"></i>
+                        <p>Shopping Made Easy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTS SECTION ========== -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured <span>Products</span></h2>
+                <p>Handpicked items just for you</p>
+            </div>
+
+            <div class="row g-4" id="productGrid">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="bi bi-headphones"></i>
+                            <span class="product-tag">Sale</span>
+                        </div>
+                        <div class="product-details">
+                            <h5>Wireless Headphones</h5>
+                            <p>Premium noise-cancelling with 30hr battery</p>
+                            <div class="product-footer">
+                                <div>
+                                    <span class="price">$49.99</span>
+                                    <span class="old-price">$79.99</span>
+                                </div>
+                                <button class="btn btn-add" data-product="Headphones">
+                                    <i class="bi bi-cart-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="bi bi-phone"></i>
+                            <span class="product-tag">New</span>
+                        </div>
+                        <div class="product-details">
+                            <h5>Smartphone X</h5>
+                            <p>6.5" display, 128GB storage, 5G ready</p>
+                            <div class="product-footer">
+                                <div>
+                                    <span class="price">$699.00</span>
+                                </div>
+                                <button class="btn btn-add" data-product="Smartphone">
+                                    <i class="bi bi-cart-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="bi bi-laptop"></i>
+                            <span class="product-tag">Hot</span>
+                        </div>
+                        <div class="product-details">
+                            <h5>Laptop Pro</h5>
+                            <p>Lightweight with 16GB RAM and SSD</p>
+                            <div class="product-footer">
+                                <div>
+                                    <span class="price">$999.00</span>
+                                </div>
+                                <button class="btn btn-add" data-product="Laptop">
+                                    <i class="bi bi-cart-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="bi bi-watch"></i>
+                        </div>
+                        <div class="product-details">
+                            <h5>Smart Watch</h5>
+                            <p>Track your fitness and health goals</p>
+                            <div class="product-footer">
+                                <div>
+                                    <span class="price">$199.99</span>
+                                </div>
+                                <button class="btn btn-add" data-product="Smart Watch">
+                                    <i class="bi bi-cart-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="bi bi-speaker"></i>
+                        </div>
+                        <div class="product-details">
+                            <h5>Bluetooth Speaker</h5>
+                            <p>Portable with deep bass sound</p>
+                            <div class="product-footer">
+                                <div>
+                                    <span class="price">$79.99</span>
+                                </div>
+                                <button class="btn btn-add" data-product="Bluetooth Speaker">
+                                    <i class="bi bi-cart-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="bi bi-camera"></i>
+                        </div>
+                        <div class="product-details">
+                            <h5>Digital Camera</h5>
+                            <p>4K video with 24MP sensor</p>
+                            <div class="product-footer">
+                                <div>
+                                    <span class="price">$449.00</span>
+                                </div>
+                                <button class="btn btn-add" data-product="Camera">
+                                    <i class="bi bi-cart-plus"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toggle Button -->
+            <div class="text-center mt-5">
+                <button class="btn btn-toggle" id="toggleBtn">
+                    <i class="bi bi-eye"></i> Hide Products
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In <span>Touch</span></h2>
+                <p>We'd love to hear from you</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="John Doe">
+                                    <div class="error" id="nameError">Please enter your name</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="john@example.com">
+                                    <div class="error" id="emailError">Please enter a valid email</div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Your message..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-send">
+                                        Send Message <i class="bi bi-send"></i>
+                                    </button>
+                                </div>
+                                <div id="formMsg" class="col-12"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-bag-fill"></i> ShopVerse</h5>
+                    <p>Your one-stop shop for amazing products.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">© 2026 ShopVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

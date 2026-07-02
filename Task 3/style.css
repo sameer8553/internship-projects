@@ -1,0 +1,358 @@
+/* ======================================
+   GLOBAL STYLES
+   ====================================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+#root {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ======================================
+   TODO APP CONTAINER
+   ====================================== */
+.todo-app {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 35px 30px 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border: 1px solid #edf2f7;
+}
+
+.todo-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.todo-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.todo-header h1 i {
+    color: #2563eb;
+    margin-right: 10px;
+}
+
+.todo-header p {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* ======================================
+   ADD TASK FORM
+   ====================================== */
+.add-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.add-form input {
+    flex: 1;
+    padding: 12px 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+
+.add-form input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.add-form button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+.add-form button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.add-form button i {
+    margin-right: 6px;
+}
+
+/* ======================================
+   FILTER BUTTONS
+   ====================================== */
+.filter-btns {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.filter-btns button {
+    padding: 6px 18px;
+    border: 2px solid #e2e8f0;
+    background: #fff;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a2e;
+}
+
+.filter-btns button:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.filter-btns button.active {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+}
+
+.filter-btns button i {
+    margin-right: 4px;
+}
+
+/* ======================================
+   TASK LIST
+   ====================================== */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: #f8fafc;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    border: 1px solid transparent;
+}
+
+.task-item:hover {
+    background: #f1f5f9;
+    border-color: #e2e8f0;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+.task-item .checkbox {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #cbd5e1;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    flex-shrink: 0;
+    background: #fff;
+}
+
+.task-item .checkbox:hover {
+    border-color: #2563eb;
+}
+
+.task-item .checkbox.checked {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #fff;
+}
+
+.task-item .checkbox i {
+    font-size: 0.8rem;
+}
+
+.task-text {
+    flex: 1;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #1a1a2e;
+    word-break: break-word;
+}
+
+/* Edit mode */
+.task-item .edit-input {
+    flex: 1;
+    padding: 6px 12px;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+
+.task-item .edit-input:focus {
+    outline: none;
+}
+
+/* ======================================
+   TASK ACTIONS
+   ====================================== */
+.task-actions {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #64748b;
+}
+
+.task-actions button:hover {
+    background: #e2e8f0;
+}
+
+.task-actions .btn-edit:hover {
+    color: #2563eb;
+    background: #dbeafe;
+}
+
+.task-actions .btn-delete:hover {
+    color: #dc2626;
+    background: #fee2e2;
+}
+
+.task-actions .btn-save:hover {
+    color: #16a34a;
+    background: #dcfce7;
+}
+
+.task-actions .btn-cancel:hover {
+    color: #dc2626;
+    background: #fee2e2;
+}
+
+/* ======================================
+   EMPTY STATE
+   ====================================== */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #94a3b8;
+}
+
+.empty-state i {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+.empty-state h5 {
+    color: #64748b;
+    font-weight: 600;
+}
+
+/* ======================================
+   STATS
+   ====================================== */
+.todo-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #edf2f7;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.todo-stats span {
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+/* ======================================
+   RESPONSIVE
+   ====================================== */
+@media (max-width: 576px) {
+    .todo-app {
+        padding: 20px 16px;
+        margin: 0 10px;
+    }
+
+    .todo-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .add-form {
+        flex-direction: column;
+    }
+
+    .add-form button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .task-item {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .task-text {
+        width: 100%;
+        order: 3;
+    }
+
+    .task-actions {
+        margin-left: auto;
+    }
+
+    .filter-btns {
+        justify-content: center;
+    }
+
+    .todo-stats {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+}
