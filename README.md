@@ -58,7 +58,7 @@ All task screenshots are available in the `Screenshots` folder.
 - **Name:** Sameer
 - **Email:** sameersaifi325635@gmail.com
 - **GitHub:** [sameer8553](https://github.com/sameer8553)
-- **LinkedIn:** [Your LinkedIn URL]
+- **LinkedIn:** www.linkedin.com/in/sameer-saifi-424088385
 
 ---
 
